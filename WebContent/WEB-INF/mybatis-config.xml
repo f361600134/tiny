@@ -9,6 +9,7 @@
 	<mappers>
 		<mapper resource="com/tiny/bean/UserMapper.xml" />
 		<mapper resource="com/tiny/bean/ColleagueMapper.xml" />
+		<mapper resource="com/tiny/bean/VerifyMapper.xml" />
 	</mappers>
 	
 </configuration> 

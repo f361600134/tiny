@@ -21,10 +21,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+  	<form action="verify" method="post">
+		请问: ${question}
+		<input type="hidden" id="id" name="id" value="${id}"> 
+	  	<input type="text" id="answer" name="answer" value="" placeholder="请给出你的答案" required>
+		<button type="submit" name="lookup" id="lookup" class="">我是!</button>
+	</form>
+	
+	
   	<form action="search" method="post">
 	  	<input type="text" id="key" name="key" value="" placeholder="姓名/电话" required>
 		<button type="submit" name="lookup" id="lookup" class="">Lookup</button>
 	</form>
-	
   </body>
 </html>

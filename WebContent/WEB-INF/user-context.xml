@@ -20,5 +20,11 @@
     	<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
 	</bean>
 
+	<!-- 校验Dao -->
+	<bean id="verifyDao" class="org.mybatis.spring.mapper.MapperFactoryBean">  
+    	<property name="mapperInterface" value="com.tiny.dao.VerifyDao" />  
+    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+	</bean>
+
 
 </beans>
