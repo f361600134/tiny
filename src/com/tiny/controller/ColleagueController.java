@@ -17,7 +17,7 @@ public class ColleagueController {
 	private ColleagueService colleagueService;
 
 	/***
-	 * Ê×Ò³²éÑ¯·µ»Ø
+	 * è·³è½¬åˆ°æŸ¥æ‰¾åŒäº‹é¡µé¢
 	 * Model model
 	 * @return
 	 */
@@ -29,7 +29,7 @@ public class ColleagueController {
 
 	
 	/***
-	 * Ê×Ò³²éÑ¯·µ»Ø
+	 * æŸ¥æ‰¾åŒäº‹
 	 * Model model
 	 * @return
 	 */

@@ -19,7 +19,7 @@ public class VerifyController {
 	private VerifyService verifyService;
 	
 	/***
-	 * Ê×Ò³²éÑ¯·µ»Ø
+	 * è·å–åˆ°éªŒè¯é—®é¢˜
 	 * Model model
 	 * @return
 	 */
@@ -41,7 +41,7 @@ public class VerifyController {
 	}
 
 	/***
-	 * Ê×Ò³²éÑ¯·µ»Ø
+	 * éªŒè¯
 	 * Model model
 	 * @return
 	 */

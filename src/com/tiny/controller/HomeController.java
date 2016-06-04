@@ -10,13 +10,11 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
 	/***
-	 * 首页 返回至/page/home.jsp页面
-	 * 
+	 * yourProjectName/admin/home
 	 * @return
 	 */
 	@RequestMapping(value = "index", method = RequestMethod.GET)
 	public ModelAndView index() {
-		// 创建模型跟视图，用于渲染页面。并且指定要返回的页面为home页面
 		ModelAndView mav = new ModelAndView("home");
 		return mav;
 	}

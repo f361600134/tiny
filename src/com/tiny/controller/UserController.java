@@ -18,17 +18,22 @@ public class UserController {
 	private UserService userService;
 	
 	/***
-	 * Ê×Ò³ ·µ»ØÖÁ/page/home.jspÒ³Ãæ
-	 * 
+	 * yourPro/regist
 	 * @return
 	 */
 	@RequestMapping(value = "regist", method = RequestMethod.GET)
 	public ModelAndView index() {
-		// ´´½¨Ä£ĞÍ¸úÊÓÍ¼£¬ÓÃÓÚäÖÈ¾Ò³Ãæ¡£²¢ÇÒÖ¸¶¨Òª·µ»ØµÄÒ³ÃæÎªhomeÒ³Ãæ
 		ModelAndView mav = new ModelAndView("login");
 		return mav;
 	}
 
+	/**
+	 * æ³¨å†Œ
+	 * @date 2016å¹´6æœˆ4æ—¥ ä¸‹åˆ12:37:57 
+	 * @param request
+	 * @param user
+	 * @return
+	 */
 	@RequestMapping(value = "regist", method = RequestMethod.POST)
 	public ModelAndView regist(HttpServletRequest request, User user) {
 		try {
@@ -43,21 +48,15 @@ public class UserController {
 	}
 
 	/***
-	 * ÓÃ»§µÇÂ½
-	 * <p>
-	 * ×¢½âÅäÖÃ£¬Ö»ÔÊĞíPOSTÌá½»µ½¸Ã·½·¨
-	 * 
+	 * ç™»é™†
 	 * @param username
 	 * @param password
 	 * @return
 	 */
 	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public ModelAndView login(String username, String password) {
-		// ÑéÖ¤´«µİ¹ıÀ´µÄ²ÎÊıÊÇ·ñÕıÈ·£¬·ñÔò·µ»Øµ½µÇÂ½Ò³Ãæ¡£
 		if (this.checkParams(new String[] { username, password })) {
-			// Ö¸¶¨Òª·µ»ØµÄÒ³ÃæÎªsucc.jsp
 			ModelAndView mav = new ModelAndView("succ");
-			// ½«²ÎÊı·µ»Ø¸øÒ³Ãæ
 			mav.addObject("username", username);
 			mav.addObject("password", password);
 			System.out.println("username=" + username + " password=" + password);
@@ -67,8 +66,7 @@ public class UserController {
 	}
 
 	/***
-	 * ÑéÖ¤²ÎÊıÊÇ·ñÎª¿Õ
-	 * 
+	 * åˆ¤æ–­å‚æ•°æ˜¯å¦ä¸ºç©º
 	 * @param params
 	 * @return
 	 */

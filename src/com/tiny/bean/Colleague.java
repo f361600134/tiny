@@ -1,6 +1,5 @@
 package com.tiny.bean;
 /**
- * @Description 同事类.主要搜索这个里面的内容
  * @author Jeremy
  * @date May 2, 2016 6:55:34 PM 
  * @version V1.0

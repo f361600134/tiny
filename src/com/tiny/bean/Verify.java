@@ -4,16 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * 用于校验
  * @author Jeremy
  * @date May 4, 2016 12:25:47 AM 
  * @version V1.0
  */
 public class Verify {
 	
-	private int id;			//问题id
-	private String question;//校验问题
-	private String answer;	//答案可能不是唯一的
+	private int id;			
+	private String question;
+	private String answer;	
 	
 	private ArrayList<String> answers;
 	

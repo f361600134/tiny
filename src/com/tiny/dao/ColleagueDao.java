@@ -6,33 +6,33 @@ import com.tiny.bean.Colleague;
 
 public interface ColleagueDao {
 	/**
-	  *  取得所有同事
-	  *  @return 用户列表
+	  *  
+	  *  @return List<Colleague>
 	  */
 	 public List<Colleague> getColleagues();
 	 
 	 /**
-	  *  根据关键字查询同事信息
+	  *	 閫氳繃id鑾峰彇鍚屼簨闆嗗悎
 	  *  @return
 	  */
 	 public List<Colleague> getColleague(String key);
 	 
 	 /**
-	  *  添加同事
+	  *  鎻掑叆鍚屼簨淇℃伅
 	  *  @param user
 	  *  @return
 	  */
 	 public void insert(Colleague colleague);
 	 
 	 /**
-	  *  更新用户信息
+	  *  淇敼鍚屼簨淇℃伅
 	  *  @param user
 	  *  @return
 	  */
 	 public int update(Colleague colleague);
 	 
 	 /**
-	  *  删除同事
+	  *  鍒犻櫎鍚屼簨淇℃伅
 	  *  @param id
 	  *  @return
 	  */
