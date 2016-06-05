@@ -32,8 +32,20 @@
 	 <mvc:annotation-driven/>
 	 <!-- <mvc:annotation-driven content-negotiation-manager="contentNegotiationManager" /> <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean"> <property name="favorPathExtension" value="false" /> <property name="favorParameter" value="false" /> <property name="ignoreAcceptHeader" value="false" /> <property name="mediaTypes" > <value> atom=application/atom+xml html=text/html json=application/json *=*/* </value> </property> </bean>
 	-->
-	
+	<mvc:default-servlet-handler/>
 	<!-- 这样根目录下面的resource的文件(.css,.js等)就不会被spring的DispatchServlet进行过滤 -->
 <!-- 	<mvc:resources location="/resources/" mapping="/resources/**"/> -->
+
+	<!-- 拦截器 -->
+	<mvc:interceptors>
+	    <!-- 多个拦截器,顺序执行 -->
+	    <mvc:interceptor>
+	      <!-- <mvc:mapping path="/user/*" />如果不配置或/*,将拦截所有的Controller -->
+	       <mvc:mapping path="/**" /><!-- 如果不配置或/*,将拦截所有的Controller -->
+	       <bean class="com.tiny.controller.CommonInterceptor"></bean>
+	        <!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 --> 
+	    </mvc:interceptor>    
+	</mvc:interceptors>
+	
 </beans>
 

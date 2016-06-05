@@ -18,4 +18,19 @@ public class HomeController {
 		ModelAndView mav = new ModelAndView("home");
 		return mav;
 	}
+	/***
+	 * yourProjectName/admin/home
+	 * @return
+	 */
+	@RequestMapping(value = "index2", method = RequestMethod.GET)
+	public ModelAndView index2() {
+		ModelAndView mav = new ModelAndView("home2");
+		return mav;
+	}
+	
 }
+
+
+
+
+
