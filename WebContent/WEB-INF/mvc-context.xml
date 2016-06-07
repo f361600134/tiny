@@ -34,6 +34,6 @@
 	-->
 	
 	<!-- 这样根目录下面的resource的文件(.css,.js等)就不会被spring的DispatchServlet进行过滤 -->
-<!-- 	<mvc:resources location="/resources/" mapping="/resources/**"/> -->
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
 </beans>
 
