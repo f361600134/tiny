@@ -38,7 +38,7 @@ public class ColleagueController {
 		System.out.println("search:"+key);
 		List<Colleague> colleagueus = colleagueService.getColleague(key);
 		
-		ModelAndView mav = new ModelAndView("index");
+		ModelAndView mav = new ModelAndView("info");
 		mav.addObject("colleagueus", colleagueus);
 		
 		System.out.println("search:"+colleagueus);
