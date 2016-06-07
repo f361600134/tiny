@@ -85,11 +85,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 								<nav id="menu-left">
 									<ul>
-										<li><a href="#home">主页</a></li>  
+										<li><a href="#home">Home</a></li>  
 <!-- 										<lxi><a href="#blog">博客</a></li> -->
-										<li><a href="#work">寻找</a></li>
+										<li><a href="#find">(っ・ω・)っ</a></li>
 <!-- 										<li><a href="#fea">友链</a></li> -->
-										<li><a href="#contact">联系</a></li>
+										<li><a href="#contact">Contact</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -103,11 +103,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<!---start-top-nav---->
 						<div data-scroll-reveal="enter from the top over 0.7s" class="top-nav">
 							<ul> 
-							  <li class="active"><a href="#home">主页</span></a></li>  
+							  <li class="active"><a href="#home">Home</span></a></li>  
 <!-- 								<li><a href="#blog">博客</a></li> -->
-								<li><a href="#work">寻找</a></li>
+								<li><a href="#find">(っ・ω・)っ</a></li>
 <!-- 								<li><a href="#fea">友链</a></li> -->
-								<li><a href="#contact">联系</a></li>
+								<li><a href="#contact">Contact</a></li>
 							  </li>  
 							</ul>
 						</div>
@@ -153,7 +153,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="clear"> </div>
 				</div>  
 				<!--end-->
-				<link href="<%=path %>/css/body/owl.carousel.css" rel="stylesheet">
+				<link href="<%=path %>/css/body/owl.carousel.css" rel="stylesheet" >
 					     <!-- Owl Carousel Assets -->
 					    <!-- Prettify -->
 					    <script src="<%=path %>/js/body/owl.carousel.js"></script>
@@ -170,11 +170,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						    pagination : false,
 			    			paginationNumbers: false,
 					      });
-					
 					    });
 					    </script>
 					   <!-- //Owl Carousel Assets -->
-					<div class="works" id="work">
+					<div class="works" id="find">
 					<h3><span>Search your lover</span></h3>
 					<i> </i>
 					<!-- start content_slider -->
@@ -212,6 +211,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					    	<input type="text" id="key" name="key" placeholder="Name">
 					    	<input type="button" name="lookup" id="lookup" value="View Info">
 					    	<div id="resText"></div>
+					    	<label>Name: 冯事成<br>Number:13249138641<br>Email:fengsc@79643.com</label>
 					    </form>
 				    </div>
 			    </div>
@@ -223,8 +223,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="contact-info">
 								<h3><span>Contact Me</span> Now</h3>
 								<p>Lorem ipsum address line1, address lin</p>
-								<label>132-4913-8641</label>
-								<a href="mailto:yourwebsitename.com">361600134@qq.com</a>
+<!-- 								<label>132-4913-8641</label> -->
+								<label><a href="tel:13249138641">132-4913-8641</a></label>
+								<a href="mailto:361600134@qq.com">361600134@qq.com</a>
 								<i> </i>
 								<form>
 									<input type="text" placeholder="Name">
@@ -249,18 +250,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div data-scroll-reveal="enter bottom but wait 0.7s" class="footer-top">
 						<div class="wrap">
 							<ul>
-								<li><a href="#">主页</a></li>
+								<li><a href="#home">Home</a></li>
 <!-- 								<li><a href="#">博客</a></li> -->
-								<li><a href="#">寻找</a></li>
+								<li><a href="#find">(づ｡◕‿‿◕｡)づ</a></li>
 <!-- 								<li><a href="#">友链</a></li> -->
-								<li><a href="#">联系</a></li>
+								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="footer-bottom">
 						<div class="wrap">
 							<!--<p>本站由HTML5制作，建议使用IE8以上浏览器(′?ω?`)</p>-->
-							<p> ©2014 <a href="404.html">@疯子</a>携手共同完成此站</p>
+							<p> ©2014 <a href="http://www.fatiny.com" target="_black">@疯子</a>携手共同完成此站</p>
 						</div>
 					</div>
 				</div>
